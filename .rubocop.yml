@@ -1,0 +1,24 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'bin/*'
+
+Metrics/LineLength:
+  Max: 120
+  AutoCorrect: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/ExpandPathArguments:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: false
