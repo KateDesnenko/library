@@ -3,5 +3,6 @@
 class Group < ApplicationRecord
   validates :name, presence: true
 
+  # множественное число книг
   has_many :books
 end
