@@ -1,0 +1,6 @@
+<h1><%= @author.name %></h1>
+
+<%= link_to('Назад', books_path) %>
+
+<p>Примечание: <%= @author.bio %></p>
+<p>Количество книг: <%= @author.books.count %></p>
