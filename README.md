@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
+
+2.6.5
 
 * System dependencies
 
-* Configuration
+Стандартный Ruby on Rails набор + postgresql
+webpacker удалён (с ним были проблемы и он не обязателен для выполнения задания)
 
 * Database creation
+```
+bundle exec rake db:create
+```
 
 * Database initialization
+```
+bundle exec rake db:migrate
+bundle exec rake db:seed
+```
 
-* How to run the test suite
+* Notes
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Прогресс по разработке можно видеть на [Dashboard проекта](https://github.com/KateDesnenko/library/projects/1)
