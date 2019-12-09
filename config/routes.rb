@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  root to: "books#index"
   resources :groups, only: [:show]
   resources :authors, only: [:show]
   resources :books, only: [:index, :show]
