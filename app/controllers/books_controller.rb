@@ -3,7 +3,7 @@
 class BooksController < ApplicationController
   def index
     # includes для оптимизации запросов к БД (проблема N+1)
-    @books = Book.includes(:authors).all
+    @books = Book.includes(:authors, :group).all
   end
 
   def show
